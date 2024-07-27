@@ -1,0 +1,300 @@
+kafka_sentiment_analysis_1  | 2024-07-27 10:01:45.605838: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+kafka_sentiment_analysis_1  | 2024-07-27 10:01:45.647568: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:01:45.647640: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:01:45.647688: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:01:45.656486: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+kafka_sentiment_analysis_1  | To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | A module that was compiled using NumPy 1.x cannot be run in
+kafka_sentiment_analysis_1  | NumPy 2.0.1 as it may crash. To support both 1.x and 2.x
+kafka_sentiment_analysis_1  | versions of NumPy, modules must be compiled with NumPy 2.0.
+kafka_sentiment_analysis_1  | Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | If you are a user of the module, the easiest solution will be to
+kafka_sentiment_analysis_1  | downgrade to 'numpy<2' or try to upgrade the affected module.
+kafka_sentiment_analysis_1  | We expect that some modules will need time to support NumPy 2.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | Traceback (most recent call last):  File "/usr/local/bin/uvicorn", line 8, in <module>
+kafka_sentiment_analysis_1  |     sys.exit(main())
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+kafka_sentiment_analysis_1  |     return self.main(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1078, in main
+kafka_sentiment_analysis_1  |     rv = self.invoke(ctx)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+kafka_sentiment_analysis_1  |     return ctx.invoke(self.callback, **ctx.params)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+kafka_sentiment_analysis_1  |     return __callback(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 404, in main
+kafka_sentiment_analysis_1  |     run(
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 569, in run
+kafka_sentiment_analysis_1  |     server.run()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+kafka_sentiment_analysis_1  |     return asyncio.run(self.serve(sockets=sockets))
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/asyncio/runners.py", line 44, in run
+kafka_sentiment_analysis_1  |     return loop.run_until_complete(main)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 67, in serve
+kafka_sentiment_analysis_1  |     config.load()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/config.py", line 477, in load
+kafka_sentiment_analysis_1  |     self.loaded_app = import_from_string(self.app)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/importer.py", line 21, in import_from_string
+kafka_sentiment_analysis_1  |     module = importlib.import_module(module_str)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "/app/./app.py", line 2, in <module>
+kafka_sentiment_analysis_1  |     from transformers import pipeline
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1576, in __getattr__
+kafka_sentiment_analysis_1  |     module = self._get_module(self._class_to_module[name])
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1586, in _get_module
+kafka_sentiment_analysis_1  |     return importlib.import_module("." + module_name, self.__name__)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/pipelines/__init__.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from ..image_processing_utils import BaseImageProcessor
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_processing_utils.py", line 21, in <module>
+kafka_sentiment_analysis_1  |     from .image_transforms import center_crop, normalize, rescale
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_transforms.py", line 49, in <module>
+kafka_sentiment_analysis_1  |     import tensorflow as tf
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/__init__.py", line 38, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.tools import module_util as _module_util
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import saved_model
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/saved_model.py", line 20, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import builder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder.py", line 23, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model.builder_impl import _SavedModelBuilder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder_impl.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.framework import dtypes
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/framework/dtypes.py", line 35, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.tsl.python.lib.core import pywrap_ml_dtypes
+kafka_sentiment_analysis_1  | AttributeError: _ARRAY_API not found
+kafka_sentiment_analysis_1  | ImportError: numpy.core._multiarray_umath failed to import
+kafka_sentiment_analysis_1  | ImportError: numpy.core.umath failed to import
+kafka_sentiment_analysis_1  | Traceback (most recent call last):
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1586, in _get_module
+kafka_sentiment_analysis_1  |     return importlib.import_module("." + module_name, self.__name__)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/pipelines/__init__.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from ..image_processing_utils import BaseImageProcessor
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_processing_utils.py", line 21, in <module>
+kafka_sentiment_analysis_1  |     from .image_transforms import center_crop, normalize, rescale
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_transforms.py", line 49, in <module>
+kafka_sentiment_analysis_1  |     import tensorflow as tf
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/__init__.py", line 38, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.tools import module_util as _module_util
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import saved_model
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/saved_model.py", line 20, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import builder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder.py", line 23, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model.builder_impl import _SavedModelBuilder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder_impl.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.framework import dtypes
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/framework/dtypes.py", line 37, in <module>
+kafka_sentiment_analysis_1  |     _np_bfloat16 = pywrap_ml_dtypes.bfloat16()
+kafka_sentiment_analysis_1  | TypeError: Unable to convert function return value to a Python type! The signature was
+kafka_sentiment_analysis_1  |   () -> handle
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | The above exception was the direct cause of the following exception:
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | Traceback (most recent call last):
+kafka_sentiment_analysis_1  |   File "/usr/local/bin/uvicorn", line 8, in <module>
+kafka_sentiment_analysis_1  |     sys.exit(main())
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+kafka_sentiment_analysis_1  |     return self.main(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1078, in main
+kafka_sentiment_analysis_1  |     rv = self.invoke(ctx)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+kafka_sentiment_analysis_1  |     return ctx.invoke(self.callback, **ctx.params)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+kafka_sentiment_analysis_1  |     return __callback(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 404, in main
+kafka_sentiment_analysis_1  |     run(
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 569, in run
+kafka_sentiment_analysis_1  |     server.run()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+kafka_sentiment_analysis_1  |     return asyncio.run(self.serve(sockets=sockets))
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/asyncio/runners.py", line 44, in run
+kafka_sentiment_analysis_1  |     return loop.run_until_complete(main)
+kafka_sentiment_analysis_1  |   File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 67, in serve
+kafka_sentiment_analysis_1  |     config.load()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/config.py", line 477, in load
+kafka_sentiment_analysis_1  |     self.loaded_app = import_from_string(self.app)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/importer.py", line 21, in import_from_string
+kafka_sentiment_analysis_1  |     module = importlib.import_module(module_str)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+kafka_sentiment_analysis_1  |   File "/app/./app.py", line 2, in <module>
+kafka_sentiment_analysis_1  |     from transformers import pipeline
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1576, in __getattr__
+kafka_sentiment_analysis_1  |     module = self._get_module(self._class_to_module[name])
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1588, in _get_module
+kafka_sentiment_analysis_1  |     raise RuntimeError(
+kafka_sentiment_analysis_1  | RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+kafka_sentiment_analysis_1  | Unable to convert function return value to a Python type! The signature was
+kafka_sentiment_analysis_1  |   () -> handle
+kafka_sentiment_analysis_1  | 2024-07-27 10:06:11.388804: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+kafka_sentiment_analysis_1  | 2024-07-27 10:06:11.430728: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:06:11.430797: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:06:11.430845: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+kafka_sentiment_analysis_1  | 2024-07-27 10:06:11.439635: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+kafka_sentiment_analysis_1  | To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | A module that was compiled using NumPy 1.x cannot be run in
+kafka_sentiment_analysis_1  | NumPy 2.0.1 as it may crash. To support both 1.x and 2.x
+kafka_sentiment_analysis_1  | versions of NumPy, modules must be compiled with NumPy 2.0.
+kafka_sentiment_analysis_1  | Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | If you are a user of the module, the easiest solution will be to
+kafka_sentiment_analysis_1  | downgrade to 'numpy<2' or try to upgrade the affected module.
+kafka_sentiment_analysis_1  | We expect that some modules will need time to support NumPy 2.
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | Traceback (most recent call last):  File "/usr/local/bin/uvicorn", line 8, in <module>
+kafka_sentiment_analysis_1  |     sys.exit(main())
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+kafka_sentiment_analysis_1  |     return self.main(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1078, in main
+kafka_sentiment_analysis_1  |     rv = self.invoke(ctx)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+kafka_sentiment_analysis_1  |     return ctx.invoke(self.callback, **ctx.params)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+kafka_sentiment_analysis_1  |     return __callback(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 404, in main
+kafka_sentiment_analysis_1  |     run(
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 569, in run
+kafka_sentiment_analysis_1  |     server.run()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+kafka_sentiment_analysis_1  |     return asyncio.run(self.serve(sockets=sockets))
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/asyncio/runners.py", line 44, in run
+kafka_sentiment_analysis_1  |     return loop.run_until_complete(main)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 67, in serve
+kafka_sentiment_analysis_1  |     config.load()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/config.py", line 477, in load
+kafka_sentiment_analysis_1  |     self.loaded_app = import_from_string(self.app)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/importer.py", line 21, in import_from_string
+kafka_sentiment_analysis_1  |     module = importlib.import_module(module_str)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "/app/./app.py", line 2, in <module>
+kafka_sentiment_analysis_1  |     from transformers import pipeline
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1576, in __getattr__
+kafka_sentiment_analysis_1  |     module = self._get_module(self._class_to_module[name])
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1586, in _get_module
+kafka_sentiment_analysis_1  |     return importlib.import_module("." + module_name, self.__name__)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/pipelines/__init__.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from ..image_processing_utils import BaseImageProcessor
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_processing_utils.py", line 21, in <module>
+kafka_sentiment_analysis_1  |     from .image_transforms import center_crop, normalize, rescale
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_transforms.py", line 49, in <module>
+kafka_sentiment_analysis_1  |     import tensorflow as tf
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/__init__.py", line 38, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.tools import module_util as _module_util
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import saved_model
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/saved_model.py", line 20, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import builder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder.py", line 23, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model.builder_impl import _SavedModelBuilder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder_impl.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.framework import dtypes
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/framework/dtypes.py", line 35, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.tsl.python.lib.core import pywrap_ml_dtypes
+kafka_sentiment_analysis_1  | AttributeError: _ARRAY_API not found
+kafka_sentiment_analysis_1  | ImportError: numpy.core._multiarray_umath failed to import
+kafka_sentiment_analysis_1  | ImportError: numpy.core.umath failed to import
+kafka_sentiment_analysis_1  | Traceback (most recent call last):
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1586, in _get_module
+kafka_sentiment_analysis_1  |     return importlib.import_module("." + module_name, self.__name__)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/pipelines/__init__.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from ..image_processing_utils import BaseImageProcessor
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_processing_utils.py", line 21, in <module>
+kafka_sentiment_analysis_1  |     from .image_transforms import center_crop, normalize, rescale
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/image_transforms.py", line 49, in <module>
+kafka_sentiment_analysis_1  |     import tensorflow as tf
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/__init__.py", line 38, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.tools import module_util as _module_util
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/__init__.py", line 42, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import saved_model
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/saved_model.py", line 20, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model import builder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder.py", line 23, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.saved_model.builder_impl import _SavedModelBuilder
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/saved_model/builder_impl.py", line 26, in <module>
+kafka_sentiment_analysis_1  |     from tensorflow.python.framework import dtypes
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/tensorflow/python/framework/dtypes.py", line 37, in <module>
+kafka_sentiment_analysis_1  |     _np_bfloat16 = pywrap_ml_dtypes.bfloat16()
+kafka_sentiment_analysis_1  | TypeError: Unable to convert function return value to a Python type! The signature was
+kafka_sentiment_analysis_1  |   () -> handle
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | The above exception was the direct cause of the following exception:
+kafka_sentiment_analysis_1  |
+kafka_sentiment_analysis_1  | Traceback (most recent call last):
+kafka_sentiment_analysis_1  |   File "/usr/local/bin/uvicorn", line 8, in <module>
+kafka_sentiment_analysis_1  |     sys.exit(main())
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1157, in __call__
+kafka_sentiment_analysis_1  |     return self.main(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1078, in main
+kafka_sentiment_analysis_1  |     rv = self.invoke(ctx)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 1434, in invoke
+kafka_sentiment_analysis_1  |     return ctx.invoke(self.callback, **ctx.params)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/click/core.py", line 783, in invoke
+kafka_sentiment_analysis_1  |     return __callback(*args, **kwargs)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 404, in main
+kafka_sentiment_analysis_1  |     run(
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/main.py", line 569, in run
+kafka_sentiment_analysis_1  |     server.run()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 60, in run
+kafka_sentiment_analysis_1  |     return asyncio.run(self.serve(sockets=sockets))
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/asyncio/runners.py", line 44, in run
+kafka_sentiment_analysis_1  |     return loop.run_until_complete(main)
+kafka_sentiment_analysis_1  |   File "uvloop/loop.pyx", line 1517, in uvloop.loop.Loop.run_until_complete
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/server.py", line 67, in serve
+kafka_sentiment_analysis_1  |     config.load()
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/config.py", line 477, in load
+kafka_sentiment_analysis_1  |     self.loaded_app = import_from_string(self.app)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/uvicorn/importer.py", line 21, in import_from_string
+kafka_sentiment_analysis_1  |     module = importlib.import_module(module_str)
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/importlib/__init__.py", line 127, in import_module
+kafka_sentiment_analysis_1  |     return _bootstrap._gcd_import(name[level:], package, level)
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+kafka_sentiment_analysis_1  |   File "/app/./app.py", line 2, in <module>
+kafka_sentiment_analysis_1  |     from transformers import pipeline
+kafka_sentiment_analysis_1  |   File "<frozen importlib._bootstrap>", line 1055, in _handle_fromlist
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1576, in __getattr__
+kafka_sentiment_analysis_1  |     module = self._get_module(self._class_to_module[name])
+kafka_sentiment_analysis_1  |   File "/usr/local/lib/python3.9/site-packages/transformers/utils/import_utils.py", line 1588, in _get_module
+kafka_sentiment_analysis_1  |     raise RuntimeError(
+kafka_sentiment_analysis_1  | RuntimeError: Failed to import transformers.pipelines because of the following error (look up to see its traceback):
+kafka_sentiment_analysis_1  | Unable to convert function return value to a Python type! The signature was
+kafka_sentiment_analysis_1  |   () -> handle
+sentiment_analysis_kafka_kafka_sentiment_analysis_1 exited with code 1
+root@opexwise-ml:/opt/kafka/sentiment_analysis_kafka#
