@@ -1,0 +1,32 @@
+root@opexwise-ml:/opt/kafka/sentiment_analysis_kafka# docker-compose logs -f
+Attaching to sentiment_analysis_kafka_kafka_sentiment_analysis_1
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:38.410197: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+kafka_sentiment_analysis_1  | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:38.522084: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:38.522128: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:39.292090: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:39.292247: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:50:39.292276: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+kafka_sentiment_analysis_1  | Downloading The model!!
+kafka_sentiment_analysis_1  | INFO:     Started server process [1]
+kafka_sentiment_analysis_1  | INFO:     Waiting for application startup.
+kafka_sentiment_analysis_1  | INFO:     Application startup complete.
+kafka_sentiment_analysis_1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+kafka_sentiment_analysis_1  | INFO:     Shutting down
+kafka_sentiment_analysis_1  | INFO:     Waiting for application shutdown.
+kafka_sentiment_analysis_1  | INFO:     Application shutdown complete.
+kafka_sentiment_analysis_1  | INFO:     Finished server process [1]
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:27.152289: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+kafka_sentiment_analysis_1  | To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:27.264832: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:27.264876: I tensorflow/compiler/xla/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:28.014047: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:28.014156: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/nvidia/lib:/usr/local/nvidia/lib64
+kafka_sentiment_analysis_1  | 2024-07-27 10:59:28.014182: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+kafka_sentiment_analysis_1  | using Saved Model!!
+kafka_sentiment_analysis_1  | INFO:     Started server process [1]
+kafka_sentiment_analysis_1  | INFO:     Waiting for application startup.
+kafka_sentiment_analysis_1  | INFO:     Application startup complete.
+kafka_sentiment_analysis_1  | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+
+
